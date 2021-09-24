@@ -1,0 +1,164 @@
+$primary-color: #2b2f32;
+$secondary-color: #78383a;
+$body-font: 'Rubik', Helvetica, sans-serif;
+$background: #1a1e22;
+
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: $primary-color;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+/* Logo */
+.logo {
+    display: grid;
+    grid-template-columns: 90px 90px 200px;
+}
+
+.logo__img {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    background: #3d4248;
+    border-radius: 20px;
+}
+
+.logo__details {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+.logo__title {
+    color: #eae9e8;
+}
+
+.logo__desc {
+    color: #696d70;
+    font-size: 14px;
+}
+
+/* progressButton */
+.progressButton {
+    display: grid;
+    grid-template-columns: 160px 100px;
+    column-gap: 150px;
+    text-transform: uppercase;
+}
+
+.progressButton__select {
+    background: #3f4346;
+    color: #bbbfc2;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 12px;
+    text-transform: uppercase;
+}
+
+.progressButton__high {
+    background: $primary-color;
+    color: #b05653;
+    border-radius: 5px;
+    border: 2px solid #814b4b;
+    padding: 8px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+/* Progress Bar */
+.progress__task {
+    letter-spacing: 1px;
+    color: #bbbfc2;
+}
+
+.progress__bar {
+    background: #36393e;
+    border-radius: 5px;
+    height: 5px;
+    width: 400px;
+}
+
+.progress__done {
+    background: #df4f4b;
+    border-radius: 5px;
+    height: 100%;
+    transition: 1s ease 0.3s;
+}
+
+.progress__input,
+input:focus {
+    width: 20px;
+    border: 0;
+    text-decoration: none;
+    background: $primary-color;
+    color: #b3b4b7;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+
+}
+
+.progress__error {
+    color: red;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+/* IOS */
+.ios__button {
+    background: #303c36;
+    color: #3a6a38;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 25px;
+    text-transform: uppercase;
+}
+
+/* Avatar Group */
+.avatar__group {
+    display: flex;
+    flex-direction: row;
+}
+.avatar__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -10px;
+    border: 2px solid #2c273d;
+}
+
+.avatar__hidden {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #686373;
+}
+
+
+.avatar_icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
